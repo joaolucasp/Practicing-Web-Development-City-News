@@ -1,0 +1,253 @@
+/*Design do Topo*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo {
+    height: 150px;
+    padding-top: 25px;
+    background: url(../imagens/detalhe-topo.png) no-repeat right top;
+
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    background: url(../imagens/logo.png);
+    text-indent: -3000px;
+}
+
+/*Design barra de navegação*/
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul{
+    margin-top: 30px;
+    background: #b10333;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: white;
+    background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a{
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+body.home #navegacao-superior a#home,
+body.brasil #navegacao-superior a#brasil,
+body.internacional #navegacao-superior a#internacional,
+body.economia #navegacao-superior a#economia,
+body.saude #navegacao-superior a#saude,
+body.ciencia #navegacao-superior a#ciencia,
+body.fotos #navegacao-superior a#fotos{
+    color: #fff;
+    background: #de003e;
+    cursor:text;
+}
+
+/*Formatação do layout das três colunas*/
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+
+#conteudo-lateral {
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+
+#conteudo-primario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+
+#duas-colunas #conteudo-primario {
+    width: 555px;
+}
+
+#uma-coluna #conteudo-primario {
+    width: 750px;
+    margin: 0 0 20px 0;
+}
+
+#conteudo-secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/*Formatação dos conteúdos*/
+.caixa {
+    margin: 10px 0;
+    padding: 5px 0;
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+
+.caixa h2{
+    padding: 5px;
+    font-size: 1em;
+    background:  #294c71;
+    color: #fff;
+}
+
+.caixa-conteudo {
+    margin-top: 5px;
+    padding: 5px;
+    background: #fff;
+}
+
+/*Formatação de menus laterais*/
+#conteudo-lateral ul a{
+    font-size: 0.9em;
+    padding: 2px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+#conteudo-lateral ul a:hover{
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+    padding-left: 20px;
+}
+
+/*Formatando lista de notícias*/
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 65px;
+}
+
+#lista-noticias li a img{
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a{
+    text-decoration: none;
+}
+
+#lista-noticias li a h3{
+    font-size: 1em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li p{
+    font-size: 0.8em;
+    color: #000;
+}
+
+#lista-noticias li:hover{
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+/*Formatando imagens*/
+img {
+    border: 2px solid #dfdfdf
+}
+
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+/*Formatando cabeçalhos*/
+.caixa h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.9em;
+    padding: 3px;
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+/*Formatando formulários*/
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 4px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.submit {
+    margin-top: 5px;
+    width: 80px;
+    padding: 3px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+
+/*Rodapé*/
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/*Site em construção*/
+.construcao {
+    text-align: center;
+    padding: 50px;
+}
+
+.construcao h2 {
+    margin-bottom: 30px;
+}
